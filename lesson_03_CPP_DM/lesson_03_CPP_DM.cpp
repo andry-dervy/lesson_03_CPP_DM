@@ -40,6 +40,8 @@ int getRandomNum(int min, int max)
 
 void addElementOfMiddleValue(std::list<double>& l)
 {
+  if(l.empty()) return;
+
   double sum{0};
   size_t cnt{0};
   for(const auto& d: l)
